@@ -3,9 +3,7 @@ A repository exploring the basic ideas of density functional theory (DFT) using 
 
 Topics covered:
 
-
 - building blocks
 - Examples
-
 
 The purpose of this repo is the idea for a potential summer school for high school students to get them excited about physics, computational physics, material science, and [Julia](https://julialang.org)!
