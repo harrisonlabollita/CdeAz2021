@@ -2,8 +2,8 @@
 
 # An electron's point of view: How the quantum world influences materials.
 
-## Installation Guide
-Welcome to Clubes de Ciencia Arizona 2021! We are so excited to be working with you this week. We have a lot of things planned but before we get started we need to setup a few things on our computer. We will need to install a _package manager_ called [Anaconda](https://docs.anaconda.com/anaconda/install/) and the [Julia](https://julialang.org) programming language. These will be the two major tools that we will be learning how to use throughout the week. Below we have outlined how to install both of these essential tools for the week's course!
+## **Installation Guide**
+Welcome to Clubes de Ciencia Arizona 2021! We are so excited to be working with you this week. We have a lot of things planned but before we get started wee need to setup a few things on our computers. We will need to install the package manager called [Anaconda](https://docs.anaconda.com/anaconda/install/) and the [Julia programming language](https://julialang.org). These will be the two major tools that we will be learning how to use throughout the week. Below we have outlined how to install both of these tools for this week's course!
 
 ### 1. Installing Anaconda
 The [Anaconda](https://docs.anaconda.com/anaconda/install/) documentation is very through to help install this software on Windows, macOS, and Linux. We've provided the basic steps below, but if you run into any trouble please click on the link.
