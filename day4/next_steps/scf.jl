@@ -1,20 +1,10 @@
 using DFTK
 using LinearAlgebra
-using JLD2
-
-function build(system_info::Dict)
-	lattice = system_info[:lattice]
-	@info "Building system....$(system_info[:name])"
-	atoms = [ElementPsp(el, psp=load_psp(el, functional="pbe")) => pos 
-		for (el, pos) in zip(system_info[:symbols], system_info[:positions])]
-	magnetic_moments = system_info[:magnetic_moments]
-	return lattice, atoms, magnetic_moments
-end;
 
 
 function run_dftk(lattice, atoms; Ecut=20, magnetic_moments=nothing, kgrid=nothing, tol=1e-11,
-		  kspacing=0.3, smearing=Smearing.None(), mixing=DFTK.SimpleMixing(), 
-		  temperature=0, filepath = "results", save=true)
+		  kspacing=0.3, smearing=Smearing.None(), mixing=KerkerMixing(), 
+		  temperature=0, filepath="results")
 
 		  @info "Building DFT model and plane-wave basis..."
 
@@ -35,7 +25,6 @@ function run_dftk(lattice, atoms; Ecut=20, magnetic_moments=nothing, kgrid=nothi
 		  println("temp.       : 	$(basis.model.temperature)")
 		  println("smearing    :	$(basis.model.smearing)")
 		  println("Ecut        :	$Ecut")
-		  isnothing(magnetic_moments) || (println("mag. mom.   :        $(magnetic_moments)"))
 		  println("fft_size    :        $(basis.fft_size)")
 		  println("irrep. k    :        $(length(basis.kpoints))")
 		  println("n_electrons :  	$(basis.model.n_electrons)")
@@ -47,15 +36,8 @@ function run_dftk(lattice, atoms; Ecut=20, magnetic_moments=nothing, kgrid=nothi
 
 		  @info "Starting scf cycle..."
 		  scfres = self_consistent_field(basis, ρ=ρ0, tol=tol, mixing=mixing)
-		  println(scfres.energies)
-
-		  if save
-		  	if isdir(dirname(filepath))
-			  	save_scfres(joinpath(filepath, "scfres.jld2"), scfres)
-			else
-				mkdir(filepath)
-			  	save_scfres(joinpath(filepath, "scfres.jld2"), scfres)
-			end
-	 	  end
-		  scfres
+		  @info "Finished and saving results..."
+		  open(joinpath(filepath, "energies.txt")) do io
+			  println(scfres.energies)
+		  end
 end;
