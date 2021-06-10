@@ -58,7 +58,7 @@ A laptop or desktop computer will be necessary for this course. To get a head st
       - Assuming students do not have everything installed, we will go through the installation guide and troubleshoot along the way. Students will complete the “Hello World” notebook. (~ 1 hour)
       - Once everyone is up and running, we will give a description about the project that we would like to focus on for the remainder of the week. (~ 30 minutes)
 
-### Day 2
+### [Day 2](day2/)
 *Objectives*: Establish main ideas that we would like to reference to for the remainder of the week.
 
 *Details*:
