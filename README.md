@@ -46,7 +46,7 @@ A laptop or desktop computer will be necessary for this course. To get a head st
 
 ## Description of Activities
 
-### Day 1
+### [Day 1](day1/)
 *Objectives*: Introduce instructors and students, present course plan and goals, physics demos,    getting started/installation guide. 
 
 *Details*:
@@ -69,7 +69,7 @@ A laptop or desktop computer will be necessary for this course. To get a head st
       - Learn how to build the crystal structure that we will need for the week. Basis vectors, atomic positions. (~ 30 minutes)
       - Write a short program that can optimize the positions of the atoms for us. (~ 1 hour)
 
-### Day 3
+### [Day 3](day3/)
 *Objectives*: Learn the basics of band theory and what certain features tell us about how a material will behave electronically, go over standard inputs for DFT calculations, complete a couple of DFT calculations using the DFTK.jl software library.
 
 *Details*:
@@ -81,7 +81,7 @@ A laptop or desktop computer will be necessary for this course. To get a head st
  - Afternoon:
       - Using DFTK.jl, perform canonical calculations for a metallic and insulating material. Crystal structures will be provided. This will be our first time using the code. (~ 1 hour 30 minutes)
 
-### Day 4
+### [Day 4](day4/)
 *Objectives*: graphene project!
 
 *Details*:
@@ -92,7 +92,7 @@ A laptop or desktop computer will be necessary for this course. To get a head st
       - Mention possible next steps. Bilayer structure with twisting, etc. (~ 30 minutes)
       - Start the club’s final presentation. (~ 1 hour)
       
-### Day 5
+### [Day 5](day5/)
 *Objectives*: Finish presentation, discuss next and future steps in the sciences, give our club presentation.
 
 *Details*:
