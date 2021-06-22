@@ -1,3 +1,4 @@
 admin/
 .ipynb_checkpoints
 *.swp
+*.jld2
