@@ -12,7 +12,7 @@ function run_DFTK(lattice, atoms; tol=1e-10, kgrid=nothing,
 
 	basis = PlaneWaveBasis(model, Ecut, kgrid=kgrid)
 	println()
-	println("starting calculation at $(Dates.now())")
+	println("starting calculation for $(save) at $(Dates.now())")
 	println()
 	println("no. of electrons: $(model.n_electrons)")
 	println("Ecut            : $(Ecut)")
@@ -23,6 +23,6 @@ function run_DFTK(lattice, atoms; tol=1e-10, kgrid=nothing,
 
 	scfres = self_consistent_field(basis, tol=tol)
 	println(scfres.energies)
-	printlnt("saving results to file $(save)...")
+	println("saving results to file $(save)...")
 	save_scfres(save * ".jld2", scfres)
 end
