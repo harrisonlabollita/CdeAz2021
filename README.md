@@ -2,6 +2,8 @@
 
 ![clubes_arizona](img/clubes.png)
 
+# Welcome everyone!
+
 # An electron's point of view: How the quantum world influences materials.
 
 ## Instructor's Info
