@@ -2,7 +2,7 @@
 
 ![clubes_arizona](img/clubes.png)
 
-# Welcome everyone!
+# Day 2 success!
 
 # An electron's point of view: How the quantum world influences materials.
 
