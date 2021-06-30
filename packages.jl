@@ -1,3 +1,6 @@
+"""
+Install the packages needed for this repo
+"""
 using Pkg
 
 function main()
